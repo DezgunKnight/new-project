@@ -1,0 +1,8 @@
+@media (max-width: 1080px) {
+    .navigation {
+        display: none;
+    }
+    #burgerBtn {
+        display: flex;
+    }
+}

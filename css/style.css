@@ -42,6 +42,19 @@ body {
 .nav-ul {
     display: flex;
 }
+.nav-ul.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #212121;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
 .nav-ul li {
     margin-right: 50px;
 }
@@ -75,28 +88,29 @@ body {
 }
 .burgerBar {
     max-width: 100%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .b-line1 {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: black;
 }
 .b-line2 {
     width: 100%;
     height: 2px;
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .b-line3 {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: black;
 }
 .icons div {
     cursor: pointer;
@@ -129,13 +143,15 @@ body {
 }
 .forms {
     position: absolute;
-    top: 150%; right: 7%;
+    top: 100px; right: 15%;
     max-width: 100%;
     width: 300px;
     height: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 999;
+    display: none;
 }
 .search-form input {
     height: 100%;
@@ -152,17 +168,21 @@ body {
 }
 .cart-items-container {
     position: absolute;
-    top: 100%; right: 0;
-    height: calc(100vh - 9.5rem);
+    top: 230px; right: 20px;
+    height: calc(100vh - 7.5rem);
     max-width: 100%;
-    width: 35rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     padding: 0 1.5rem;
+    z-index: 998;
+    display: none;
 }
-.cart-items-container .cart-item {
-    position: relative;
-    
-}
+
+
 
 
 /* Header Ends */
